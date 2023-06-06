@@ -68,6 +68,7 @@ wrapper height= view port height as the image of backgroi=und and foreground
     transform: translateX(-1%);
     letter-spacing: 8px;
     text-shadow: 0 0 10px rgba(0,0,0,100);
+    display: flex;
     /* border: 2px solid black; */
     /* background-color:darkgrey; */
     /* padding: 5px; */
