@@ -1,0 +1,142 @@
+/* universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+wrapper height= view port height as the image of backgroi=und and foreground
+
+*/
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100vw;
+    perspective: 10px;
+    /* to on perpective as eyes and image distance */
+    transform-style: preserve-3d;
+
+}
+
+.container{
+    position: relative;
+    height:100%; 
+    /* height 100% as per the viewport */
+    /* as per the wrapper */
+    /* because we dispace the foreground and background in later section */
+    display: flex;
+    /* to text at center we made the flex display */
+    justify-content:center;
+    align-items:center;
+    /* explicitly saying 3d game is on */
+    transform-style: preserve-3d;
+    z-index: -1;
+    /*  neeche vali chezo mai dikega
+    */
+
+
+}
+/* this is to make the images relative so that when we scroll the site parallex effect is shown */
+.background{
+    transform: translateZ(-35px) scale(4.7);
+}
+
+/* .foreground{
+    transform: translateZ(-10px) scale(2); */
+/* } */
+.background{
+    /* to make images overlap we make images absolute */
+    position: absolute;
+    /* we displace the background and foreground */
+    height: 100%;
+    width: 100%;
+    /* height and widths */
+    /* the image is half and half because in flex by default main axis is horizontal  */
+    object-fit: cover;
+
+    z-index: -1;
+
+    transform-style: preserve-3d;
+
+}
+.op{
+    position: absolute;
+    top: 15rem;
+    font-size: 8rem;
+    color:rgb(200, 195, 195);
+    transform: translateX(-1%);
+    letter-spacing: 8px;
+    text-shadow: 0 0 10px rgba(0,0,0,100);
+    /* border: 2px solid black; */
+    /* background-color:darkgrey; */
+    /* padding: 5px; */
+    /* box-shadow: 2px; */
+}
+/* } */
+h2{
+    color:darkgray;
+}
+.sechead{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+section{
+    background-color: rgb(0, 0, 0);
+    padding:10rem 0;
+    color:rgb(147, 144, 144);
+    font-size: 1.5rem;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg{
+    
+    width:100%;
+    background-attachment: fixed;
+    height: 400px;
+    background-size:cover ;
+    background-position: center;
+  
+    
+
+}
+
+.bg1{
+    background-image: url(realpub1.jpg);
+    
+    
+   
+
+    
+    
+}
+.bg2{
+
+    background-image: url(gta.jpg);
+}
+.bg3{
+
+    background-image: url(counter.jpg);
+}
+
+.description{
+    /* position:absolute; */
+    text-align: center;
+    top: 10rem;
+    left: 50rem;
+    font-size: 4rem;
+    /* border: 1x solid rgb(233, 33, 33); */
+    background-color: rgb(78, 78, 78);
+    color:rgb(0, 0, 0);
+    transform: translateX(-1%);
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0,0,0,100);
+    font-weight: 700;
+    
+
+
+}
